@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Push, Pop and Join</title>
+    </head>
+    <body>
+
+        <h2>Javascript Arrays</h2>
+        <h2>join(), pop() and push()</h2>
+
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+        <p id="result4"></p>
+
+        <script>
+            var colors = ["Red", "Blue", "Yellow", "Pink"];
+
+            // Display the original array
+            document.getElementById("result1").innerHTML = "Original Array: " + colors;
+
+             // Display the array joined with " * "
+             document.getElementById("result2").innerHTML = "Array with join(): " + colors.join(" * ");
+
+             // Remove the last element using pop()
+             colors.pop();
+             document.getElementById("result3").innerHTML = "Array after pop(): " + colors;
+
+             // Add a new element to the end of the array using push()
+             colors.push("Green");
+             document.getElementById("result4").innerHTML = "Array after push(): " + colors;
+        </script>
+</body>
+</html>
